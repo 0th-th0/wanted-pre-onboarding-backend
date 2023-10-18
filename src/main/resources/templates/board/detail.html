@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>detail</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>name</th>
+    <th>position</th>
+    <th>award</th>
+    <th>content</th>
+    <th>technique</th>
+  </tr>
+  <tr>
+    <td th:text="${recruit.name}"></td>
+    <td th:text="${recruit.position}"></td>
+    <td th:number="${recruit.award}"></td>
+    <td th:text="${recruit.content}"></td>
+    <td th:text="${recruit.technique}"></td>
+  </tr>
+</table>
+</body>
+</html>
